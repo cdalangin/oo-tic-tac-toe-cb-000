@@ -74,9 +74,9 @@ end
 
   def full?(index)
     if !(@board.include(" "))
-      true
+      return true
     else
-      false
+      return false
     end
   end
 
