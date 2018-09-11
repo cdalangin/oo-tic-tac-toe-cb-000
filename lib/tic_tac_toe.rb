@@ -78,6 +78,7 @@ end
   else
     false
   end
+  end
 
   def draw?
     full? && !won?
