@@ -74,6 +74,8 @@ end
 
   def full?
     @board.count{|index| index == "X" || index == "O"}
+  else
+    false
   end
 
   def draw?
