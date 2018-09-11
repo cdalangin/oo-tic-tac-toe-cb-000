@@ -72,12 +72,10 @@ class TicTacToe
   false
 end
 
-  def full?
-  if index == "X" || index == "O"
-    true
+  def full?(index)
+    @board.count{|index| index == "X" || index == "O"}
   else
     false
-  end
   end
 
   def draw?
