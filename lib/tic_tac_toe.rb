@@ -97,4 +97,17 @@ end
       @board[index[0]]
     end
   end
+
+  def play
+    while !over?
+      turn
+      won?
+    end
+    if winner == "X"
+      puts "Congratulations X!"
+    elsif winner == "O"
+      puts "Congratulations O!"
+    else
+      puts "Cat's Game!"
+  end
 end
