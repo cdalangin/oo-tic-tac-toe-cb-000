@@ -93,7 +93,7 @@ end
   end
 
   def winner
-    if over? && won?
+    if index = won?
       @board[index[0]]
     end
   end
