@@ -74,6 +74,10 @@ end
 
   def full?(index)
     if !(@board.include(" "))
+      true
+    else
+      false
+    end
   end
 
   def draw?
