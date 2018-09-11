@@ -86,9 +86,9 @@ end
 
   def over?
     if draw? || won? || full?
-      true
-    elsif !full
-      false
+      return true
+    else
+      return false
     end
   end
 
