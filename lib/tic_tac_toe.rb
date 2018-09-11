@@ -93,8 +93,8 @@ end
   end
 
   def winner
-    if combo = won?
-      @board[combo[0]]
+    if index = won?
+      @board[index[0]]
     end
   end
 end
