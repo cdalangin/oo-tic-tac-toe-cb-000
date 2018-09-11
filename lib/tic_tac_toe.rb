@@ -73,7 +73,7 @@ class TicTacToe
 end
 
   def full?(index)
-    @board[index] != " "
+    if !(@board.include(" "))
   end
 
   def draw?
