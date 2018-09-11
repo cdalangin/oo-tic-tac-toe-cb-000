@@ -81,11 +81,8 @@ end
   end
 
   def over?
-    if draw? || won? 
+    if draw? || won? || full?
       true
-    else
-      !full? || 
-      false
     end
   end
 
