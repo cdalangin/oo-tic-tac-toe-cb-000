@@ -73,7 +73,7 @@ class TicTacToe
 end
 
   def full?
-    if !(@board.include(" "))
+    if !(@board.include?(" "))
       return true
     else
       return false
