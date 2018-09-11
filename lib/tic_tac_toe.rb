@@ -72,8 +72,8 @@ class TicTacToe
   false
 end
 
-  def full?
-    @board.count{|index| index == "X" || index == "O"}
+  def full?(index)
+    index != " "
   end
 
   def draw?
@@ -83,7 +83,7 @@ end
   def over?
     if draw? || won? || full?
       true
-    else
+    elsif !full
       false
     end
   end
