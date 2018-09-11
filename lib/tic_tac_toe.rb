@@ -72,7 +72,7 @@ class TicTacToe
   false
 end
 
-  def full?(index)
+  def full?
     if !(@board.include(" "))
       return true
     else
